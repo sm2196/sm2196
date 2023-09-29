@@ -1,22 +1,29 @@
 /* Reset Styles */
+
 body {
+    background: scroll;
     margin: 0;
     padding: 0;
     font-family: 'Fuggles', cursive;
     color: #505050;
 }
 
+
 /* Header Styles */
 header {
-    background-color: #282689;
+    background: linear-gradient(301deg, #dd6317, #ff0a0a);
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: sticky; top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .headeraH1 {
     margin: 0;
+    font-family: 'Skranji', cursive;
+    position: sticky; top: 0;
 }
 
 .banner {
@@ -39,7 +46,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 20px;
-}
+ }
 
 nav li {
     display: inline-block;
@@ -55,7 +62,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #bfd27c;  /* Darker shade for hover */
+    background-color: #ce8ed3;  /* Darker shade for hover */
 }
 
 /* Banner Styles */
@@ -101,18 +108,25 @@ main h3 {
 }
 
 .service-column {
-    flex-basis: calc(25% - 20px);
-    max-width: calc(25% - 20px);
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50%- 20px);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
+.service img2{
+    float:right
+
+}
+
 .service-column img {
-    width: 180px;
+    width: 100%;
     height: auto;
     margin-bottom: 10px;
+    max-width: 250px;
+
 }
 
 .service-column h3 {
@@ -138,24 +152,41 @@ main h3 {
 .cta-container {
     text-align: center;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #4edfc9;
     margin-top: 30px;
+    color: #fff;
+    border: 1px solid #0d0d0d;
 }
-
+.cta-container h2 {
+    font-size: 28px; 
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+.cta-container p {
+    font-size: 18px; 
+    font-weight: normal; 
+    margin-bottom: 20px;
+}
 .cta-button {
-    display: inline-block;
+   display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #4f46ab;
     color: #ffffff;
+    border: 2px solid #ffffff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 20px;
     margin-top: 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #27747a;
+    color: #fff;
+    border-color: #fff;
 }
 
 /* Footer Styles */
