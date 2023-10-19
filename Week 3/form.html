@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACT US - WANDERLUST VOYAGES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <main style="padding-top: -2 cm;" class="services">
+
+            <form id="form">
+                <h1>Login</h1>
+
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Username">
+                    <div class="error" id="username-error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Email">
+                    <div class="error" id="email-error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <div class="error" id="password-error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="confirmPass">Confirm Password</label>
+                    <input type="password" id="confirmPass" placeholder="Confirm password">
+                    <div class="error" id="confirmPass-error"></div>
+                </div>
+
+                <button type="submit" id="submit-button">Sign In</button>
+            </form>
+
+
+
+        </main>
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+            <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("form");
+            const username = document.getElementById("username");
+            const email = document.getElementById("email");
+            const password = document.getElementById("password");
+            const confirmPassword = document.getElementById("confirPass");
+            const usernameError = document.getElementById("username-error");
+            const emailError = document.getElementById("email-error");
+            const passwordError = document.getElementById("password-error");
+            const confirmPasswordError = document.getElementById("confirmPass-error");
+
+            function validateUsername() {
+                if (username.value.trim() === "") {
+                    username.classList.add("error");
+                    usernameError.textContent = "Username is required";
+                    var element = document.getElementById('username');
+                    element.style.borderColor = '#ff3860';
+                    return false;
+                } else {
+                    username.classList.remove("error");
+                    usernameError.textContent = "";
+                    var element = document.getElementById('username');
+                    element.style.borderColor = '#f0f0f0';
+                    return true;
+                }
+            }
+
+            function validateEmail() {
+                var email = document.getElementById("email");
+                var text = document.getElementById("text");
+                var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+                if (email.value.match(pattern)) {
+                    textE.innerHTML = "Valid email";
+                    email.style.borderColor = "#90EE90";
+                    text.style.color = "#90EE90";
+                }
+                else if (!email.value.match(pattern)) {
+                    textE.innerHTML = "invalid-email Address";
+                    email.style.borderColor = "#8b0000";
+                    text.style.color = "#8b0000";
+                }
+            }
+
+            function validatePassword() {
+                if (password.value.trim() === "") {
+                    password.classList.add("error");
+                    passwordError.textContent = "Password is required";
+                    var element = document.getElementById('password');
+                    element.style.borderColor = '#ff3860';
+                    return false;
+                } else if (password.value.length < 8) {
+                    password.classList.add("error");
+                    passwordError.textContent = "Password must be at least 8 characters";
+                    var element = document.getElementById('password');
+                    element.style.borderColor = '#ff3860';
+                    return false;
+                } else {
+                    password.classList.remove("error");
+                    passwordError.textContent = "";
+                    var element = document.getElementById('password');
+                    element.style.borderColor = '#f0f0f0';
+                    return true;
+                }
+
+            }
+
+            function validateConfirmPassword() {
+                if (confirmPassword.value.trim() === "") {
+                    confirmPassword.classList.add("error");
+                    confirmPasswordError.textContent = "Confirm Password is required";
+                    var element = document.getElementById('confirmPass');
+                    element.style.borderColor = '#ff3860';
+                    return false;
+                } else if (confirmPassword.value !== password.value) {
+                    confirmPassword.classList.add("error");
+                    confirmPasswordError.textContent = "Passwords do not match";
+                    var element = document.getElementById('confirmPass');
+                    element.style.borderColor = '#ff3860';
+                    return false;
+                } else {
+                    confirmPassword.classList.remove("error");
+                    confirmPasswordError.textContent = "";
+                    var element = document.getElementById('confirmPass');
+                    element.style.borderColor = '#f0f0f0';
+                    return true;
+                }
+            }
+
+            function validateForm() {
+                const isUsernameValid = validateUsername();
+                const isEmailValid = validateEmail();
+                const isPasswordValid = validatePassword();
+                const isConfirmPasswordValid = validateConfirmPassword();
+
+                return isUsernameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid;
+
+            }
+
+            form.addEventListener("submit", function (e) {
+      if (!validateForm()) {
+        e.preventDefault(); 
+      }
+    });
+  });

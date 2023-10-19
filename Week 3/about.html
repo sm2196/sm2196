@@ -2,84 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About - Wanderlust Voyages</title>
+  <title>CONTACT US - WANDERLUST VOYAGES</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
   <style>
-	  table {
-		border-collapse: collapse;
-		width: 100%;
-	}
 
-	th, td {
-		padding: 8px;
-		text-align: left;
-		border-bottom: 1px solid #ddd;
-	}
+      /* Style for the form: setting width, auto margin for centering, padding, 
+      background color, border radius for rounded corners, and font size */
+      #form {
+      width: 300px;
+      margin: 5vh auto 0 auto; /* This centers the form vertically and 
+      horizontally */
+      padding: 20px;
+      background-color: whitesmoke; /* Light gray background for the form */
+      border-radius: 4px; /* Rounded corners for the form */
+      font-size: 12px;
+      }
+      /* Style for the form's heading: setting the text color and alignment */
+      #form h1 {
+      color: #0f2027; /* Dark text color for the heading */
+      text-align: center; /* Center-align the heading */
+      }
+      /* Style for the form's button: padding, top margin, full width, text color, 
+      background color, no border, and rounded corners */
+      #form button {
+      padding: 10px;
+      margin-top: 10px; /* Space above the button */
+      width: 100%; /* Make the button expand the full width of the form */
+      color: white; /* White text color for the button */
+      background-color: rgb(41, 57, 194); /* Blue background color for the button 
+      */
+      border: none; /* Remove the default border */
+      border-radius: 4px; /* Rounded corners for the button */
+      }
+      /* Container for input fields: using flexbox for layout, column direction */
+      .input-control {
+      display: flex;
+      flex-direction: column; /* Stack the children (label, input, error message) 
+      vertically */
+      }
+      /* Style for input fields inside the container: border style, rounded corners, 
+      block-level display, font size, padding, full width */
+      .input-control input {
+      border: 2px solid #f0f0f0; /* Light gray border for the inputs */
+      border-radius: 4px; /* Rounded corners for the inputs */
+      display: block; /* Display input field as a block */
+      font-size: 12px; /* Text size within the input field */
+      padding: 10px; /* Space inside the input field */
+      width: 100%; /* Input field takes up 100% of the form's width */
+      }
+      /* Remove focus outline from input fields */
+      .input-control input:focus {
+      outline: 0; /* Remove outline when input is focused */
+      }
+      /* Style for input fields with class "success": green border */
+      .input-control  .success input {
+      border-color: #09c372; /* Green border to indicate successful input */
+      }
+      /* Style for input fields with class "error": red border */
+      .input-control .error input {
+      border-color: #ff3860; /* Red border to indicate an error in input */
+      }
+      /* Style for the error message: text color, font size, and height */
+      .input-control .error {
+      color: #ff3860; /* Red text color for error messages */
+      font-size: 9px; /* Smaller font size for error messages */
+      height: 13px; /* Explicit height to ensure consistent spacing */
+      }
 
-	
   </style>
- 
   
 </head>
 <body>
+ <div>
   <header>
     <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
 	</header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="tasks.html">Tasks</a></li>
-    </ul>
-    </nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+  
+  <main style="padding-top: -2 cm;" class="services">
 
-    		<!-- Header banner -->
-    <div class="banner">
-      <img src="images/banner.svg" alt="Wanderlust Voyages Banner">
-    </div>
+    <form id="form">
+        <h1>User Registration</h1>
 
-  <main class="services">
-   <h2>About Us - Wanderlust Voyages</h2>
-   <p>At Wanderlust Voyages, we believe in the transformative power of travel. <br>
-    Founded in 2010 by two passionate globetrotters, <b>Jane Doe and John Smith</b>, <br>
-    our mission is to provide unforgettable adventures that go beyond the ordinary.</p>
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username">
+          <div class="error" id="username-error"></div>
+        </div>
 
-    <h2>Our Story</h2>
-    <p>Every journey has a beginning, and ours started on the bustling streets of Bangkok. <br>
-      After a chance meeting between Jane and John, two avid travelers from different corners of the world,<br>
-      Wanderlust Voyages was born out of a shared dream to help others experience the beauty and wonder of our planet.
-    </p>
- 
-   <table>
-			<tr>
-				<th>Name</th>
-				<th>Position</th>
-				<th>Email</th>
-			</tr>
-			<tr>
-				<td>John Smith</td>
-				<td>CEO</td>
-				<td>john@ourservice.com</td>
-			</tr>
-			<tr>
-				<td>Jane Doe</td>
-				<td>Marketing Manager</td>
-				<td>johnd@ourservice.com</td>
-			</tr>
-		</table>
-		<!-- Call to Action Section -->
-<div class="cta-container">
-  <h2>Ready to Experience Our Services?</h2>
-  <p>Join us today and discover the difference we can make for you!</p>
-  <a href="contact.html" class="cta-button">Contact Us Now</a>
-</div>
+        <div class="input-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter your email">
+          <div class="error" id="email-error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+          <div class="error" id="password-error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="Confirm your password">
+          <div class="error" id="confirm-password-error"></div>
+        </div>
+        
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+
+		
 
   </main>
   <footer>
@@ -90,5 +133,7 @@
       </ul>
     <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
+  </div>
+  <script src="formScript.js"></script>
 </body>
 </html>

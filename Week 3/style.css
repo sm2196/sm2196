@@ -1,4 +1,60 @@
 /* Reset Styles */
+/*Here, will be the Gallery slide show style*/
+* {
+    box-sizing: border-box;
+    font-family: 'Fuggles', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.slideshow-img {
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+/* Position the image container (needed to position the left and right 
+    arrows) */
+.container {
+    position: relative;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    top: 10px;
+    left: 10px;
+}
 
 body {
     background: scroll;
@@ -23,7 +79,8 @@ header {
 .headeraH1 {
     margin: 0;
     font-family: 'Skranji', cursive;
-    position: sticky; top: 0;
+    position: sticky;
+    top: 0;
 }
 
 .banner {
@@ -46,7 +103,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 20px;
- }
+}
 
 nav li {
     display: inline-block;
@@ -58,11 +115,13 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
 }
 
 nav a:hover {
-    background-color: #ce8ed3;  /* Darker shade for hover */
+    background-color: #ce8ed3;
+    /* Darker shade for hover */
 }
 
 /* Banner Styles */
@@ -92,7 +151,7 @@ main {
     margin: 2rem auto;
     padding: 2rem;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 main h3 {
@@ -116,9 +175,8 @@ main h3 {
     text-align: center;
 }
 
-.service img2{
-    float:right
-
+.service img2 {
+    float: right
 }
 
 .service-column img {
@@ -153,24 +211,27 @@ main h3 {
     text-align: center;
     padding: 20px;
     background-color: #4edfc9;
-    margin-top: 30px;
+    margin-top: 50px;
     color: #fff;
     border: 1px solid #0d0d0d;
 }
+
 .cta-container h2 {
-    font-size: 28px; 
+    font-size: 28px;
     margin-bottom: 20px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-weight: bold;
     text-decoration: underline;
 }
+
 .cta-container p {
-    font-size: 18px; 
-    font-weight: normal; 
+    font-size: 18px;
+    font-weight: normal;
     margin-bottom: 20px;
 }
+
 .cta-button {
-   display: inline-block;
+    display: inline-block;
     padding: 10px 20px;
     background-color: #4f46ab;
     color: #ffffff;
@@ -209,13 +270,206 @@ footer li {
 footer a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;  /* Smooth transition for hover effect */
+    transition: color 0.3s;
+    /* Smooth transition for hover effect */
 }
 
 footer a:hover {
-    color: #b3b3b3;  /* Lighter color on hover */
+    color: #b3b3b3;
+    /* Lighter color on hover */
 }
 
 footer p {
     margin: 10px 0 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#firstimg {
+    display: block;
+}
+
+/* Position the image container (needed to position the left and right 
+    arrows) 
+.gallery-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+
+
+.gallery-container img {
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}*/
+
+/* Hide the images by default */
+/*.mySlides {
+    display: none;
+    width:100%;
+    padding: 50px, 50px, 80px, 80px;
+    position:relative;
+}*/
+
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#firstimg {
+    display: block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    top: 400px;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #36033a;
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    margin-top: -50px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    margin-left: 700px;
+}
+
+/* Style for the form: setting width, auto margin for centering, padding, 
+background color, border radius for rounded corners, and font size */
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    /* This centers the form vertically and 
+    horizontally */
+    padding: 20px;
+    background-color: whitesmoke;
+    /* Light gray background for the form */
+    border-radius: 4px;
+    /* Rounded corners for the form */
+    font-size: 12px;
+}
+
+/* Style for the form's heading: setting the text color and alignment */
+#form h1 {
+    color: #0f2027;
+    /* Dark text color for the heading */
+    text-align: center;
+    /* Center-align the heading */
+}
+
+/* Style for the form: setting width, auto margin for centering, padding, 
+      background color, border radius for rounded corners, and font size */
+#form {
+    width: 300px;
+    margin: 5vh auto 0 auto;
+    /* This centers the form vertically and 
+        horizontally */
+    padding: 20px;
+    background-color: whitesmoke;
+    /* Light gray background for the form */
+    border-radius: 4px;
+    /* Rounded corners for the form */
+    font-size: 12px;
+}
+
+/* Style for the form's heading: setting the text color and alignment */
+#form h1 {
+    color: #0f2027;
+    /* Dark text color for the heading */
+    text-align: center;
+    /* Center-align the heading */
+}
+
+/* Style for the form's button: padding, top margin, full width, text color, 
+        background color, no border, and rounded corners */
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    /* Space above the button */
+    width: 100%;
+    /* Make the button expand the full width of the form */
+    color: white;
+    /* White text color for the button */
+    background-color: rgb(41, 57, 194);
+    /* Blue background color for the button 
+        */
+    border: none;
+    /* Remove the default border */
+    border-radius: 4px;
+    /* Rounded corners for the button */
+}
+
+/* Container for input fields: using flexbox for layout, column direction */
+.input-control {
+    display: flex;
+    flex-direction: column;
+    /* Stack the children (label, input, error message) 
+        vertically */
+}
+
+/* Style for input fields inside the container: border style, rounded corners, 
+        block-level display, font size, padding, full width */
+.input-control input {
+    border: 2px solid #f0f0f0;
+    /* Light gray border for the inputs */
+    border-radius: 4px;
+    /* Rounded corners for the inputs */
+    display: block;
+    /* Display input field as a block */
+    font-size: 12px;
+    /* Text size within the input field */
+    padding: 10px;
+    /* Space inside the input field */
+    width: 100%;
+    /* Input field takes up 100% of the form's width */
+}
+
+/* Remove focus outline from input fields */
+.input-control input:focus {
+    outline: 0;
+    /* Remove outline when input is focused */
+}
+
+/* Style for input fields with class "success": green border */
+.input-control .success input {
+    border-color: #09c372;
+    /* Green border to indicate successful input */
+}
+
+/* Style for input fields with class "error": red border */
+.input-control .error input {
+    border-color: #ff3860;
+    /* Red border to indicate an error in input */
+}
+
+/* Style for the error message: text color, font size, and height */
+.input-control .error {
+    color: #ff3860;
+    /* Red text color for error messages */
+    font-size: 9px;
+    /* Smaller font size for error messages */
+    height: 13px;
+    /* Explicit height to ensure consistent spacing */
 }

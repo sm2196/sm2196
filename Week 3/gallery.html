@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
-  <title>Gallery - Wanderlust Voyages</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-   .gallery-container {
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-top: 40px;
-  }
-
-   .gallery-container img {
-	width: 24%;
-	margin-bottom: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
+
+<!--container div is link, slides div is pics, mySlides div should be under container div-->
+
 <body>
- <div>
-  <header>
-    <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
-	</header>
+  <div>
+    <header>
+      <h1 class="headeraH1">Wanderlust Voyages | Travel Agency</h1>
+    </header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -37,38 +26,108 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="tasks.html">Tasks</a></li>
-    </ul>
+        <li><a href="form.html">Login</a></li>
+      </ul>
     </nav>
-  
-  <main class="services">
+
+    <main class="services">
       <h1>Gallery</h1>
 
-		<div class="gallery-container">
-			<img src="images/1.jpeg" alt="Spa Image 1">
-			<img src="images/2.jpeg" alt="Spa Image 2">
-			<img src="images/3.jpeg" alt="Spa Image 3">
-			<img src="images/4.jpeg" alt="Spa Image 4">
-			<img src="images/5.jpeg" alt="Spa Image 5">
-			<img src="images/6.jpeg" alt="Spa Image 6">
-			<img src="images/7.jpeg" alt="Spa Image 7">
-			<img src="images/8.jpeg" alt="Spa Image 7">
-		</div>
-   <!-- Call to Action -->
-   <section class="cta-container">
-    <h2>Ready to Experience Our Services?</h2>
-    <p>Join us today and discover the difference we can make for you!</p>
-    <a href="contact.html" class="cta-button">Contact Us Now</a>
-  </section>
+      <div class="container">
+        <div class="slideshow-img">
 
-  </main>
-  <footer>
+          <div class="mySlides" id="firstimg">
+            <div class="numberText">page 1 of 8</div>
+            <img src="images/1.png" alt="Truck">
+
+          </div>
+          <div class="mySlides">
+            <div class="numberText">page 2 of 8</div>
+            <img src="images/2.png" alt="Powerpuff girls">
+
+          </div>
+          <div class="mySlides">
+            <div class="numberText">page 3 of 8</div>
+            <img src="images/3.png" alt="flower">
+
+          </div>
+          <div class="mySlides">
+            <div class="numberText">page 4 of 8</div>
+            <img src="images/4.png" alt="car">
+
+          </div>
+          <div class="mySlides">
+            <div class="numberText">page 5 of 8</div>
+            <img src="images/5.png" alt="dora">
+
+          </div>
+          <div class="mySlides">
+            <div class="numberText">page 6 of 8</div>
+            <img src="images/6.png" alt="icecream">
+
+          </div>
+          <div class="mySlides">
+            <div class="numberText">page 7 of 8</div>
+            <img src="images/7.png" alt="shoes">
+            </div>
+
+            <div class="mySlides">
+              <div class="numberText">page 8 of 8</div>
+              <img src="images/8.png" alt="house">
+
+            </div>
+
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+
+        <!-- Call to Action -->
+        <section class="cta-container">
+          <h2>Ready to Experience Our Services?</h2>
+          <p>Join us today and discover the difference we can make for you!</p>
+          <a href="contact.html" class="cta-button">Contact Us Now</a>
+        </section>
+    </main>
+
+    <footer>
       <ul>
         <li><a href="https://www.facebook.com/">Facebook</a></li>
         <li><a href="https://twitter.com/">Twitter</a></li>
-        <li ><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
       </ul>
-    <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
-  </footer>
- </div>
+      <p>&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
 </body>
+
 </html>
