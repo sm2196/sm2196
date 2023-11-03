@@ -8,7 +8,7 @@ console.log(myCity.name); // Outputs: Dubai
 console.log(myCity.country); // Outputs: UAE
 
 var myCity = ["Dubai", "UAE", "Dubai Mall"];
-console.log(myCity[0]); // Outputs: Dubai
+console.log(myCity[1].country); // Outputs: Dubai
 
 var myCities = [
     {
@@ -30,7 +30,7 @@ var cityContainer = document.getElementById("city-info");
 var btn = document.getElementById("btn");
 btn.addEventListener("click", function(){
 var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'https://sm2196.github.io/Week%20%4/cities1.json');
+ourRequest.open('GET', 'https://sm2196.github.io/Week%204/cities1.json');
 ourRequest.onload = function() {
 var ourData = JSON.parse(ourRequest.responseText);
 renderHTML(ourData);
