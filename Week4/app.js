@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => {
                 if (error instanceof TypeError) {
-                    alert('Network error. Please check your internet connection.');
+                    alert('Try again.');
                 } else {
                     alert('An error occurred. Please try again later.');
                 }
