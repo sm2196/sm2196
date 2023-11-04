@@ -1,20 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Step 2: Create variables
+    //variables
     const cityInput = document.getElementById('cityInput');
     const btn = document.getElementById('btn');
     const weatherInfo = document.getElementById('weather-info');
 
-    
+    //button for click event
     btn.addEventListener('click', function () {
         
         const cityName = cityInput.value.trim();
 
+        //if city name is not entered
         if (cityName === '') {
             alert('Please enter a city name.');
             return;
         }
 
-        const apiKey = 'c70c3d0329f258416311ca325432a5fa'; // Replace with your API key
+        //api key
+        const apiKey = 'c70c3d0329f258416311ca325432a5fa'; 
 
         
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const temperature = data.main.temp;
                 const windSpeed = data.wind.speed;
 
+                //display weather details
                 const weatherDetails = `
                     <p>Weather Description: ${description}</p>
                     <p>Main Temperature: ${temperature}°C</p>
@@ -46,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 weatherInfo.innerHTML = weatherDetails;
             })
+
+            //error handling
             .catch(error => {
                 if (error instanceof TypeError) {
                     // Network Error
