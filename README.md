@@ -1,7 +1,5 @@
 ## Hi there 👋
-- 🔭 I’m currently working on The Student Dorm
-Link to (https://thestudentdorm.com/)
-
+- 🔭 I’m currently working on The Student Dorm (https://thestudentdorm.com/)
 - 🌱 I’m currently learning Java, C and more
 - 👯 I’m looking to collaborate with like-minded professionals
 - <h2 align="center">Languages and Tools:</h2>
