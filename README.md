@@ -77,3 +77,9 @@
 </div>
 
 ###
+
+<h2 align="left">Here's some courses and certificates</h2>
+
+###
+
+###
