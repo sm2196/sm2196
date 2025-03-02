@@ -78,7 +78,7 @@
 
 ###
 
-<h2 align="left">Here's some courses and certificates</h2>
+<h2 align="left">Here's some of my courses and certificates</h2>
 <p align="left">- ✓ <a href="https://learn.microsoft.com/en-us/users/swapnamanikandan-4271/achievements/uy7xkme3?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, complaince, and identity</a> <br>- ✓ <a href="https://learn.microsoft.com/en-us/users/swapnamanikandan-4271/achievements/ymlmputr?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">Microsoft Azure AI Fundamentals: Computer Vision </a> <br>- ✓ <a href="https://learn.microsoft.com/en-us/users/swapnamanikandan-4271/achievements/f2tlg63x?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">Microsoft Azure AI Fundamentals: Natural Language Processing </a> <br>- ✓ <a href="https://www.datacamp.com/skill-verification/AIF0029303186783" target="_blank">AI Fundamentals </a> <br>- ✓ <a href="https://www.linkedin.com/learning/certificates/48fcebb7e11cc6734b549b1a57b23826989d549c1395c6f556657ca1d92cfc38?accountId=2374954&u=2374954&success=true&authUUID=J6FDCHu9S8G69ETXbttvOA%3D%3D" target="_blank">Ethical Hacking: The Complete Malware Analysis Process</a></p>
 
 ###
