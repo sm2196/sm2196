@@ -79,7 +79,7 @@
 ###
 
 <h2 align="left">Here's some courses and certificates</h2>
-<p align="left">- <a href="https://learn.microsoft.com/en-us/users/swapnamanikandan-4271/achievements/uy7xkme3?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, complaince, and identity</a> <br>- 🌱 <a href="[https://learn.microsoft.com/en-us/users/swapnamanikandan-4271/achievements/uy7xkme3?ref=https%3A%2F%2Fwww.linkedin.com%2F](https://learn.microsoft.com/en-us/users/swapnamanikandan-4271/achievements/ymlmputr?ref=https%3A%2F%2Fwww.linkedin.com%2F)" target="_blank">Microsoft Azure AI Fundamentals: Computer Vision </a> <br>- 👯<a href="https://readme.com/" target="_blank">ReadMe</a></p>
+<p align="left">- <a href="https://learn.microsoft.com/en-us/users/swapnamanikandan-4271/achievements/uy7xkme3?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, complaince, and identity</a> <br>- 🌱 <a href="https://learn.microsoft.com/en-us/users/swapnamanikandan-4271/achievements/ymlmputr?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">Microsoft Azure AI Fundamentals: Computer Vision </a> <br>- 👯<a href="https://readme.com/" target="_blank">ReadMe</a></p>
 
 ###
 
